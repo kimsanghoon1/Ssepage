@@ -13,19 +13,19 @@
         <div class="table">
             <h2>Pods</h2>
             <vuetable ref="pods"
-                      :fields="['nameSpace', 'service', 'pod', 'deployment', 'replicaSet']"
+                      :fields="['Namespace', 'Name', 'statusType', 'phase', 'startTime', 'updateTime', 'endTime']"
                       :data="list"
             >
             </vuetable>
         </div>
-        <div class="table">
-            <h2>Services</h2>
-            <vuetable ref="services"
-                      :fields="['nameSpace', 'service', 'pod', 'deployment', 'replicaSet']"
-                      :data="list"
-            >
-            </vuetable>
-        </div>
+        <!--<div class="table">-->
+            <!--<h2>Services</h2>-->
+            <!--<vuetable ref="services"-->
+                      <!--:fields="['nameSpace', 'service', 'pod', 'deployment', 'replicaSet']"-->
+                      <!--:data="list"-->
+            <!--&gt;-->
+            <!--</vuetable>-->
+        <!--</div>-->
         <div class="table">
             <h2>Jobs</h2>
             <vuetable ref="jobs"
@@ -114,7 +114,7 @@
     }
     .table {
         float: left;
-        width: 32%;
+        width: 45%;
         margin : 5px;
     }
     ul {
